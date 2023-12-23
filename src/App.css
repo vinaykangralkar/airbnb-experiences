@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.navbar {
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 3px 8px #0000001a;
+
+  display: flex;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  width: 82px;
+  margin-left: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero {
   display: flex;
   flex-direction: column;
+}
+
+.hero-image {
+  width: 396px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.texts {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.card-container {
+  position: relative;
+  width: 176px;
+}
+
+.profile-pic {
+  width: 176px;
+  border-radius: 9px;
+  object-fit: cover;
+}
+
+.avalibility {
+  position: absolute;
+  z-index: 1;
+  top: 2%;
+  left: 5%;
+  border-radius: 2px;
+  background-color: #ffffff;
+  height: 20px;
+  width: 61px;
+
+  display: flex;
+}
+
+.avalibility > p {
+  height: 11px;
+  margin: auto;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.rating {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.rating-icon {
+  width: 18px;
+  height: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rating > p {
+  margin: 0;
+  padding-left: 3px;
+  font-weight: 300px;
+}
+
+.event-name {
+  margin: 10px 0;
+}
+
+.price {
+  margin: 0;
 }
